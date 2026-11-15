@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Foods | Fine Dining Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Modern <span>Foods.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <div class="cart-area">
+
+                <button class="cart-button" id="cartButton">
+                    <span>Cart</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <div class="cart-dropdown" id="cartDropdown">
+
+                    <h3>Your Cart</h3>
+
+                    <div id="cartItems">
+                        <p class="empty-cart">Your cart is empty.</p>
+                    </div>
+
+                    <div class="cart-total">
+                        <span>Subtotal</span>
+                        <strong id="cartTotal">₹0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#booking" class="nav-booking">
+                Book a Table
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">WELCOME TO MODERN FOODS</p>
+
+            <h1>
+                An Experience<br>
+                Beyond <span>Taste.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the perfect blend of rich flavours, fresh ingredients
+                and unforgettable dining moments.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-button">
+                    Explore Menu
+                </a>
+
+                <a href="#booking" class="text-button">
+                    Reserve a Table →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+
+        <div class="about-image">
+            <img src="./images/gallery-dining.jpg" alt="Elegant restaurant dining area">
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">OUR STORY</p>
+
+            <h2>
+                Good Food. <span>Beautiful Moments.</span>
+            </h2>
+
+            <p>
+                At Modern Foods, every dish is prepared with passion,
+                quality ingredients and attention to detail. We bring
+                together delicious flavours and a welcoming atmosphere
+                to make every visit special.
+            </p>
+
+            <p>
+                Whether it is a family dinner, a celebration or a casual
+                get-together, we make every moment worth remembering.
+            </p>
+
+            <a href="#menu" class="primary-button">
+                Discover Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">FRESHLY PREPARED FOR YOU</p>
+
+            <h2>
+                Explore Our <span>Menu</span>
+            </h2>
+
+            <p>
+                Delicious choices, unforgettable flavours.
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+        <div class="category-buttons">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="starters">
+                Starters
+            </button>
+
+            <button class="category-btn" data-category="main">
+                Main Course
+            </button>
+
+            <button class="category-btn" data-category="desserts">
+                Desserts
+            </button>
+
+            <button class="category-btn" data-category="drinks">
+                Drinks
+            </button>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <!-- STARTERS -->
+
+            <article class="menu-card" data-category="starters" data-name="Royal Tandoori Paneer Tikka" data-price="280">
+
+                <img src="./images/paneer-tikka.jpg" alt="Royal Tandoori Paneer Tikka">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">STARTERS</p>
+
+                    <h3>Royal Tandoori Paneer Tikka</h3>
+
+                    <p>
+                        Smoky paneer cubes marinated in aromatic spices.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹280</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters" data-name="Peri Peri Loaded Crispy Corn" data-price="220">
+
+                <img src="./images/crispy-corn.jpg" alt="Peri Peri Crispy Corn">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">STARTERS</p>
+
+                    <h3>Peri Peri Crispy Corn</h3>
+
+                    <p>
+                        Golden crunchy corn tossed in spicy peri peri seasoning.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹220</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters" data-name="Oriental Crispy Spring Rolls" data-price="240">
+
+                <img src="./images/spring-rolls.jpg" alt="Crispy Spring Rolls">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">STARTERS</p>
+
+                    <h3>Oriental Crispy Spring Rolls</h3>
+
+                    <p>
+                        Crunchy rolls filled with fresh vegetables and herbs.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹240</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters" data-name="Smoky Tandoori Chicken Wings" data-price="320">
+
+                <img src="./images/chicken-wings.jpg" alt="Tandoori Chicken Wings">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">STARTERS</p>
+
+                    <h3>Smoky Tandoori Chicken Wings</h3>
+
+                    <p>
+                        Juicy chicken wings with a delicious smoky flavour.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹320</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="starters" data-name="Cheese and Jalapeno Poppers" data-price="250">
+
+                <img src="./images/cheese-balls.jpg" alt="Cheese Poppers">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">STARTERS</p>
+
+                    <h3>Cheese & Jalapeño Poppers</h3>
+
+                    <p>
+                        Crispy bites filled with creamy cheese and jalapeños.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹250</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- MAIN COURSE -->
+
+            <article class="menu-card" data-category="main" data-name="Classic Butter Chicken" data-price="390">
+
+                <img src="./images/butter-chicken.jpg" alt="Butter Chicken">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">MAIN COURSE</p>
+
+                    <h3>Classic Butter Chicken</h3>
+
+                    <p>
+                        Tender chicken in a rich, creamy tomato gravy.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹390</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="main" data-name="Hyderabadi Dum Biryani" data-price="350">
+
+                <img src="./images/biryani.jpg" alt="Hyderabadi Biryani">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">MAIN COURSE</p>
+
+                    <h3>Hyderabadi Dum Biryani</h3>
+
+                    <p>
+                        Fragrant basmati rice cooked with traditional spices.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹350</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="main" data-name="Paneer Lababdar" data-price="310">
+
+                <img src="./images/paneer-makhani.jpg" alt="Paneer Lababdar">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">MAIN COURSE</p>
+
+                    <h3>Paneer Lababdar</h3>
+
+                    <p>
+                        Soft paneer in a rich, flavourful North Indian gravy.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹310</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="main" data-name="Punjabi Dal Makhani" data-price="260">
+
+                <img src="./images/dal-makhani.jpg" alt="Dal Makhani">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">MAIN COURSE</p>
+
+                    <h3>Punjabi Dal Makhani</h3>
+
+                    <p>
+                        Slow-cooked black lentils finished with rich cream.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹260</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- DESSERTS -->
+
+            <article class="menu-card" data-category="desserts" data-name="Chocolate Lava Cake" data-price="180">
+
+                <img src="./images/chocolate-cake.jpg" alt="Chocolate Lava Cake">
+                <div class="menu-card-content">
+
+                    <p class="food-category">DESSERTS</p>
+
+                    <h3>Chocolate Lava Cake</h3>
+
+                    <p>
+                        Warm chocolate cake with a soft molten centre.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹180</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-card" data-category="desserts" data-name="Classic Cheesecake" data-price="200">
+
+                <img src="./images/cheesecake.jpg" alt="Classic Cheesecake">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">DESSERTS</p>
+
+                    <h3>Classic Cheesecake</h3>
+
+                    <p>
+                        Creamy cheesecake with a buttery biscuit base.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹200</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- DRINKS -->
+
+            <article class="menu-card" data-category="drinks" data-name="Fresh Lime Mojito" data-price="140">
+
+                <img src="./images/mojito.jpg" alt="Fresh Lime Mojito">
+
+                <div class="menu-card-content">
+
+                    <p class="food-category">DRINKS</p>
+
+                    <h3>Fresh Lime Mojito</h3>
+
+                    <p>
+                        A refreshing blend of lime, mint and soda.
+                    </p>
+
+                    <div class="food-bottom">
+                        <strong>₹140</strong>
+                        <button class="add-button">Add +</button>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFERS SECTION -->
+    <section class="offers-section section-padding" id="offers">
+
+        <div class="offer-content">
+
+            <p class="eyebrow">SPECIAL OFFER</p>
+
+            <h2>
+                Make Every Meal <span>Special.</span>
+            </h2>
+
+            <p>
+                Enjoy a special dining experience with our exclusive offer.
+                Contact us for current offers and availability.
+            </p>
+
+            <a href="#booking" class="primary-button">
+                Book Your Table
+            </a>
+
+        </div>
+
+        <div class="offer-tag">
+            <strong>15%</strong>
+            <span>OFF</span>
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section section-padding" id="gallery">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">A GLIMPSE OF OUR WORLD</p>
+
+            <h2>
+                Our <span>Gallery</span>
+            </h2>
+
+            <p>
+                Good food, beautiful spaces and memorable moments.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="./images/gallery-table.jpg" alt="Restaurant table">
+
+            <img src="./images/gallery-food.jpg" alt="Delicious restaurant food">
+
+            <img src="./images/gallery-dining.jpg" alt="Restaurant dining space">
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section section-padding" id="reviews">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">WHAT OUR GUESTS SAY</p>
+
+            <h2>
+                Words of <span>Appreciation</span>
+            </h2>
+
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Amazing food, beautiful ambience and wonderful service.
+                    A lovely place for dinner."
+                </p>
+
+                <h3>Priya Sharma</h3>
+
+                <span>Happy Guest</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The menu has so many delicious options.
+                    The presentation and flavours were excellent."
+                </p>
+
+                <h3>Rahul Mehta</h3>
+
+                <span>Happy Guest</span>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "A perfect place to spend quality time with family.
+                    Would definitely visit again."
+                </p>
+
+                <h3>Ananya Verma</h3>
+
+                <span>Happy Guest</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section section-padding" id="booking">
+
+        <div class="booking-layout">
+
+            <div class="booking-info">
+
+                <p class="eyebrow">RESERVE YOUR EXPERIENCE</p>
+
+                <h2>
+                    Book a <span>Table</span>
+                </h2>
+
+                <p class="booking-intro">
+                    Make your next meal memorable. Reserve your table at
+                    Modern Foods and enjoy delicious food, warm hospitality
+                    and a beautiful dining atmosphere.
+                </p>
+
+
+                <div class="booking-detail">
+
+                    <span class="detail-icon">✦</span>
+
+                    <div>
+                        <h3>Perfect for Every Occasion</h3>
+                        <p>
+                            Family dinners, celebrations, date nights
+                            and special moments.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="booking-detail">
+
+                    <span class="detail-icon">✦</span>
+
+                    <div>
+                        <h3>Dining Hours</h3>
+                        <p>Monday – Sunday</p>
+                        <p>12:00 PM – 10:00 PM</p>
+                    </div>
+
+                </div>
+
+
+                <div class="booking-detail">
+
+                    <span class="detail-icon">✦</span>
+
+                    <div>
+                        <h3>Personalised Hospitality</h3>
+                        <p>
+                            We look forward to welcoming you and your guests.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="booking-note">
+                    <p>
+                        "Great food tastes even better when shared."
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form class="booking-form" id="bookingForm">
+
+                <h3>Reserve Your Table</h3>
+
+                <p class="form-subtitle">
+                    Fill in your details to request a reservation.
+                </p>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bookingName">Full Name</label>
+
+                        <input type="text" id="bookingName"
+                            placeholder="Enter your name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingPhone">Phone Number</label>
+
+                        <input type="tel" id="bookingPhone"
+                            placeholder="Enter phone number"
+                            pattern="[0-9]{10}" maxlength="10" required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bookingDate">Date</label>
+
+                        <input type="date" id="bookingDate" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingTime">Time</label>
+
+                        <select id="bookingTime" required>
+
+                            <option value="">Select time</option>
+                            <option>12:00 PM</option>
+                            <option>12:30 PM</option>
+                            <option>01:00 PM</option>
+                            <option>01:30 PM</option>
+                            <option>02:00 PM</option>
+                            <option>02:30 PM</option>
+                            <option>03:00 PM</option>
+                            <option>03:30 PM</option>
+                            <option>04:00 PM</option>
+                            <option>04:30 PM</option>
+                            <option>05:00 PM</option>
+                            <option>05:30 PM</option>
+                            <option>06:00 PM</option>
+                            <option>06:30 PM</option>
+                            <option>07:00 PM</option>
+                            <option>07:30 PM</option>
+                            <option>08:00 PM</option>
+                            <option>08:30 PM</option>
+                            <option>09:00 PM</option>
+                            <option>09:30 PM</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="guestCount">Number of Guests</label>
+
+                    <select id="guestCount" required>
+
+                        <option value="">Select guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+                        <option>7 Guests</option>
+                        <option>8 Guests</option>
+                        <option>9 Guests</option>
+                        <option>10 Guests</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="bookingMessage">
+                        Special Request (Optional)
+                    </label>
+
+                    <textarea id="bookingMessage" rows="3"
+                        placeholder="Any special request?"></textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-button submit-button">
+                    Confirm Reservation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+            <h2>
+                Get in <span>Touch</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-layout">
+
+            <div class="contact-info">
+
+                <div>
+                    <h3>Visit Us</h3>
+                    <p>Modern Foods, Your City, India</p>
+                </div>
+
+                <div>
+                    <h3>Call Us</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>hello@modernfoods.com</p>
+                </div>
+
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>Monday – Sunday: 12:00 PM – 10:00 PM</p>
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="contactName">Your Name</label>
+
+                    <input type="text" id="contactName"
+                        placeholder="Enter your name" required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactEmail">Email Address</label>
+
+                    <input type="email" id="contactEmail"
+                        placeholder="Enter your email" required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contactMessage">Message</label>
+
+                    <textarea id="contactMessage" rows="4"
+                        placeholder="Write your message..." required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-button">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="#home" class="logo footer-logo">
+                    Modern <span>Foods.</span>
+                </a>
+
+                <p>
+                    Delicious flavours. Beautiful moments.
+                    Unforgettable experiences.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#booking">Book a Table</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Modern Foods. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="j2.js"></script>
+
+</body>
+</html>
